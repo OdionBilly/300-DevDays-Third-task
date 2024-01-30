@@ -10,3 +10,9 @@ E-commerce page for 300 devs days
 - [@drpearlz](https://www.github.com/Drpearlz)
 
 <!-- Once you commit to the project, add your name above. -->
+
+## Tech Stack
+
+**Client:** HTML and CSS
+
+<!-- **Server:** Node, Express -->
