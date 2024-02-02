@@ -1,3 +1,6 @@
+/* Added the Inter Font family */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
 *,
 *::after,
 *::before {
@@ -7,6 +10,10 @@
 }
 :root {
   --PrimaryPR: hsla(212, 92%, 61%, 1);
+}
+
+body {
+  font-family: "Inter", sans-serif;
 }
 /*** Styles for the header***/
 .header--row--1,
@@ -30,7 +37,10 @@
   margin: 0 20px 0 0;
 }
 h1 {
-  font-size: 0.8rem;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+
   /* font-weight: ;
     font-family: ; */
 }
