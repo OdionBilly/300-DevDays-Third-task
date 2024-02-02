@@ -1,10 +1,85 @@
 /* styles for the task */
 
+/* universal styles for the body */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* filter section styles starts here */
+
 #filters {
     width: 280px;
     height: 708px;
-    border: 1px solid red ;
+    border: 1px solid red;
+    position: relative;
 }
+
+#filters * {
+    margin: 0; /* resetting the default margin... expected to be inherited from the "*" selector eventually */
+}
+
+/* styles for the min and max inputs */
+#filters > div > input[placeholder] {
+    width: 132px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #DDE2E4;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    margin: 4px 0px 20px;
+}
+
+/* styles for only the max input */
+#filters > div > input:nth-of-type(2)[placeholder] {
+    position: absolute;
+    left: 144px;
+}
+
+/* styles for all h3 in the filter container */
+#filters h3 {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding: 5px 0px;
+    color: #252C32;
+}
+
+/* specific style for the second h3 (Quadcopter Features) */
+#filters h3:nth-of-type(2) {
+    margin-bottom: 6px;
+}
+
+/* styles for all the divs in filter containing the checkboxes and their labels */
+#filters > div:not(#filters > div:first-of-type) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 280px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+
+#filters div > input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #B0BABF;
+    appearance: none;
+    background-color: #F6F8F9;
+}
+
+#filters div > input[type="checkbox"]:checked {
+    background-color: #B0BABF;
+}
+
+#filters div > label {
+    font-size: 0.875rem;
+    padding: 5px 0px;
+    color: #252C32;
+}
+
 .serp-flex-container {
     flex-direction: column;
     align-items: center;
