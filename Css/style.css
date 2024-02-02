@@ -121,6 +121,99 @@ hr {
   color: hsla(200, 12%, 91%, 1);
 }
 /* styles for the task */
+
+/* universal styles for the body */
+
+body {
+    font-family: 'Inter', sans-serif; /* font family rule for the whole document */
+}
+
+/* filter section styles starts here */
+
+#filters {
+    width: 280px;
+    height: 708px;
+    position: relative;
+}
+
+/* resetting the default margin... expected to be inherited from the "*" selector eventually */
+#filters * {
+    margin: 0; 
+}
+
+/* styles for the min and max inputs */
+#filters > div > input[placeholder] {
+    width: 132px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #DDE2E4;
+    padding: 4px 12px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+/* removes the outline while min and max input is focused */
+#filters > div > input[placeholder]:focus { 
+    outline: none;
+}
+
+/* styles for only the max input */
+#filters > div > input:nth-of-type(2)[placeholder] {
+    position: absolute;
+    left: 144px;
+}
+
+/* styles for all h3 in the filter container */
+#filters h3 {
+    font-weight: 600;
+    height: 24px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding: 5px 0px;
+    color: #252C32;
+    box-sizing: border-box;
+}
+
+/* margin rules for all h3s expect the first one containing (Price, $) */
+#filters h3:not(#filters h3:first-of-type) {
+    margin: 20px 0px 6px;
+}
+
+/* styles for all the divs in filter containing the checkboxes and their labels */
+#filters > div:not(#filters > div:first-of-type) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 280px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+/* styles for the checkboxes */
+#filters div > input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #B0BABF;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: #F6F8F9;
+}
+
+/* styles for the checkboxes wen they are checked */
+#filters div > input[type="checkbox"]:checked {
+    background-color: #B0BABF;
+}
+
+/* styles for the checkboxes labels */
+#filters div > label {
+    font-size: 0.875rem;
+    padding: 5px 0px;
+    color: #252C32;
+}
+
+/* end of filter styles */
+
 .serp-flex-container {
   flex-direction: column;
   align-items: center;
