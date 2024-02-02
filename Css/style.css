@@ -1,4 +1,10 @@
 /* styles for the task */
+
+#filters {
+    width: 280px;
+    height: 708px;
+    border: 1px solid red ;
+}
 .serp-flex-container {
     flex-direction: column;
     align-items: center;
