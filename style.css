@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ background-color: white;
+ font-family: 'Times New Roman', Times, serif;
+ width: 100%;
+}
+
+#chat-container{
+    background: #4094F7;
+    width: 60px;
+height: 60px;
+top: 816px;
+left: 600px;
+border-radius: 30px;
+border: 1px solid black;
+background-position: center;
+padding: 15px;
+background-repeat: no-repeat;
+overflow: hidden;
+
+}
+
+img{
+    background: #FFFFFF;
+    width: 28.65px;
+height: 23.25px;
+top: 15px;
+left: 15px;
+overflow: hidden;
+}
