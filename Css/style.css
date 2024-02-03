@@ -56,7 +56,6 @@ button {
 .shopping--ctg {
     display: flex;
     margin-left: auto;
-    gap: ;
 }
 .sign--in--btn {
     background-color: hsla(0, 0%, 100%, 1);
