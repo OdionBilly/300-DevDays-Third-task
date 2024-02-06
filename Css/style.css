@@ -173,7 +173,10 @@ hr {
 /* search find */
 .search-find {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-left: 134px;
+  padding-right: 211px;
 }
 
 .search {
