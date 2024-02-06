@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 *,
 *::after,
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   overflow-x: hidden;
 }
@@ -31,8 +31,6 @@ section {
   width: 100%;
   display: flex;
 }
-
-
 
 /*** Styles for the header***/
 .header--row--1,
@@ -118,7 +116,7 @@ button {
   height: 19px;
 }
 
-.header--row--1>form {
+.header--row--1 > form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +132,7 @@ button {
   /* margin-top: 4rem; */
 }
 
-.header--row--1>form input {
+.header--row--1 > form input {
   border: none;
   outline: none;
   flex-grow: 1;
@@ -143,7 +141,7 @@ button {
   padding: 0.2rem 0;
 }
 
-.header-content>form input::placeholder {
+.header-content > form input::placeholder {
   color: var(--Gray-500, #667085);
 }
 
@@ -172,7 +170,88 @@ hr {
 
 /* styles for the task */
 
+/* search find */
+.search-find {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-left: 134px;
+  padding-right: 211px;
+}
 
+.search {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.text-color {
+  color: #4094f7;
+}
+
+.search-find .icon-select {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dde2e4;
+  border-radius: 6px;
+  padding: 4px 14px 4px 12px;
+  gap: 4px;
+}
+
+.dropdown > p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9aa6ac;
+}
+
+.dropdown > p > span {
+  color: #252c32;
+  padding-left: 5px;
+}
+
+.icon-select .dropdown img {
+  width: 8px;
+  height: 4px;
+  margin-left: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-flex .first-icon img {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-flex .first-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #e5e9eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-icon.background {
+  background-color: #f6f8f9;
+}
 /* filter section styles starts here */
 
 #filters {
@@ -181,25 +260,24 @@ hr {
   position: relative;
 }
 
-
 /* styles for the min and max inputs */
-#filters>div>input[placeholder] {
+#filters > div > input[placeholder] {
   width: 132px;
   height: 32px;
   border-radius: 6px;
-  border: 1px solid #DDE2E4;
+  border: 1px solid #dde2e4;
   padding: 4px 12px;
   margin-top: 4px;
   box-sizing: border-box;
 }
 
 /* removes the outline while min and max input is focused */
-#filters>div>input[placeholder]:focus {
+#filters > div > input[placeholder]:focus {
   outline: none;
 }
 
 /* styles for only the max input */
-#filters>div>input:nth-of-type(2)[placeholder] {
+#filters > div > input:nth-of-type(2)[placeholder] {
   position: absolute;
   left: 144px;
 }
@@ -211,7 +289,7 @@ hr {
   font-size: 0.875rem;
   line-height: 1.5;
   padding: 5px 0px;
-  color: #252C32;
+  color: #252c32;
   box-sizing: border-box;
 }
 
@@ -221,7 +299,7 @@ hr {
 }
 
 /* styles for all the divs in filter containing the checkboxes and their labels */
-#filters>div:not(#filters > div:first-of-type) {
+#filters > div:not(#filters > div:first-of-type) {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -231,29 +309,27 @@ hr {
 }
 
 /* styles for the checkboxes */
-#filters div>input[type="checkbox"] {
+#filters div > input[type="checkbox"] {
   width: 16px;
   height: 16px;
   border-radius: 4px;
-  border: 1px solid #B0BABF;
+  border: 1px solid #b0babf;
   box-sizing: border-box;
   appearance: none;
-  background-color: #F6F8F9;
+  background-color: #f6f8f9;
 }
 
 /* styles for the checkboxes wen they are checked */
-#filters div>input[type="checkbox"]:checked {
-  background-color: #B0BABF;
+#filters div > input[type="checkbox"]:checked {
+  background-color: #b0babf;
 }
 
 /* styles for the checkboxes labels */
-#filters div>label {
+#filters div > label {
   font-size: 0.875rem;
   padding: 5px 0px;
-  color: #252C32;
+  color: #252c32;
 }
-
-
 
 /* end of filter styles */
 
@@ -373,7 +449,7 @@ table {
   border-collapse: collapse;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border-radius: 4px;
@@ -384,7 +460,7 @@ input[type='checkbox'] {
   margin-right: 10px;
 }
 
-input[type='checkbox']:checked {
+input[type="checkbox"]:checked {
   background-color: #b0babf;
 }
 
@@ -514,17 +590,14 @@ th:hover {
 
 /* Media Queries */
 @media (max-width: 1200px) {
-
   .shopping--ctg,
   .nav--list,
-  tr> :last-child {
+  tr > :last-child {
     display: none;
   }
-
 }
 
 @media (max-width: 800px) {
-
   .header--row--1 .blue--background,
   .header--row--1 form {
     display: none;
@@ -535,7 +608,6 @@ th:hover {
     align-items: center;
     justify-content: space-between;
   }
-
 
   .table-container,
   h3,
@@ -553,12 +625,12 @@ th:hover {
   }
 
   .button span,
-  tr> :nth-last-child(-n + 3),
+  tr > :nth-last-child(-n + 3),
   .desktop {
     display: none;
   }
 
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     width: 15px;
     height: 15px;
   }
@@ -584,7 +656,7 @@ th:hover {
   bottom: 10px;
   right: 10px;
   border-radius: 100%;
-  background-color: #4094F7;
+  background-color: #4094f7;
 }
 
 .chat svg {
@@ -594,7 +666,6 @@ th:hover {
 
 @media (max-width: 800px) {
   .chat {
-
     bottom: 5px;
     right: 5px;
     height: 50px;
