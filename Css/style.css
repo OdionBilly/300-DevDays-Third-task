@@ -223,11 +223,31 @@ hr {
   justify-content: center;
 }
 
-.icon-select .icon-flex {
+.icon-flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+}
+
+.icon-flex .first-icon img {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-flex .first-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #e5e9eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-icon.background {
+  background-color: #f6f8f9;
 }
 /* filter section styles starts here */
 
