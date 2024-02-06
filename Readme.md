@@ -8,6 +8,7 @@ E-commerce page for 300 devs days
 - [@OdionBilly](https://www.github.com/OdionBilly)
 - [@drpearlz](https://www.github.com/Drpearlz)
 - [@lightcod3s](https://www.github.com/lightcod3s)
+- [@inclined4X](https://github.com/inclined4X)
 
 <!-- Once you commit to the project, add your name above. -->
 
