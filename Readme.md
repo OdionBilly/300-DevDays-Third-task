@@ -9,6 +9,7 @@ E-commerce page for 300 devs days
 - [@drpearlz](https://www.github.com/Drpearlz)
 - [@lightcod3s](https://www.github.com/lightcod3s)
 - [@inclined4X](https://github.com/inclined4X)
+- [@holabayor](https://github.com/holabayor)
 
 <!-- Once you commit to the project, add your name above. -->
 
